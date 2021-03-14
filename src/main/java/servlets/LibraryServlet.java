@@ -1,0 +1,39 @@
+package servlets;
+
+import connection.LibraryDao;
+import entity.LibraryEntity;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+
+@WebServlet(
+        name = "libraryServlet",
+        urlPatterns = "/libraryservlet"
+)
+public class LibraryServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("register.jsp").forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        LibraryDao libraryDao = new LibraryDao();
+
+        libraryDao.addBook(new LibraryEntity(
+                        req.getParameter("title"),
+                        req.getParameter("author"),
+                        req.getParameter("page"),
+                        req.getParameter("year")
+                )
+        );
+
+        req.getRequestDispatcher("library.jsp").forward(req, resp);
+    }
+}
+
