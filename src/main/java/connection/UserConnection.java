@@ -1,12 +1,8 @@
 package connection;
 
-import javax.servlet.annotation.WebServlet;
 import java.sql.*;
 
-@WebServlet(
-        name = "db",
-        urlPatterns = "/db"
-)
+
 public class UserConnection {
     private final static Connection conn = getConn();
 
@@ -28,17 +24,17 @@ public class UserConnection {
 
 
             stmt = c.createStatement();
-            stmt.execute("CREATE TABLE IF NOT EXISTS person (\n" +
-                    "    user_id integer  not null primary key ,\n" +
-                    "    user_login text not null ,\n" +
-                    "    user_password text not null,\n" +
-                    "    user_email text,\n" +
-                    "    user_address text\n" +
+            stmt.execute("CREATE TABLE IF NOT EXISTS users (\n" +
+                    "   user_id serial primary key not null ,\n" +
+                    "   user_login text not null,\n" +
+                    "   user_password text not null ,\n" +
+                    "   user_email text,\n" +
+                    "   user_address text\n" +
                     ");");
 
 
             stmt = c.createStatement();
-            stmt.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_login ON person (user_login);");
+            stmt.execute("CREATE UNIQUE INDEX IF NOT EXISTS ii_user_login ON users (user_login);");
 
             return c;
         } catch (SQLException e) {

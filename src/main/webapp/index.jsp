@@ -3,11 +3,23 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+    <style>
+
+        body {
+            background-color: coral;
+           text-align: center;
+        }
+        header{
+            background-color: OldLace;
+            text-align: center;
+        }
+        div{
+            background-color:grey;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
+<header>
 <a href="library.jsp">Library</a>|
 <a href="register.jsp">Register</a>|
 <a href="bookservlet">BookList</a>|
@@ -15,5 +27,10 @@
 <a href="login.jsp">Login</a>|
 <a href="filterlogout">LogoutFilter</a>|
 <a href="main">MainFilter</a>
+</header>
+<body>
+<h1><%= "Hello on the Web application!" %>
+</h1>
+<br/>
 </body>
 </html>

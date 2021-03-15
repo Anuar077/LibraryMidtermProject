@@ -10,28 +10,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <!-- CSS -->
+    <title>JSP - Hello World</title>
     <style>
-        <%@ include file="/main.css" %>
+
+        body {
+            background-color: coral;
+            text-align: center;
+        }
+        header{
+            background-color: OldLace;
+            text-align: center;
+        }
     </style>
-
 </head>
-
-<body>
-
 <header>
-
-
     <a href="library.jsp">Library</a>|
     <a href="register.jsp">Register</a>|
     <a href="bookservlet">BookList</a>|
-    <a href="login.jsp">Login</a>|
     <a href="loginfilter.jsp">LoginFilter</a>|
+    <a href="login.jsp">Login</a>|
     <a href="filterlogout">LogoutFilter</a>|
     <a href="main">MainFilter</a>
 </header>
-<div class="wrapper">
+
+<div class="lib">
     <h1 class="text-center">Library Register</h1>
     <form class="text-center" action="libraryservlet" method="post">
         <input type="text" name="title" placeholder="Title"/><br/>

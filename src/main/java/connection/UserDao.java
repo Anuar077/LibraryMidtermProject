@@ -12,7 +12,7 @@ public class UserDao {
 
     public void addUser(UserEntity user) {
         try {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO person(user_login, user_password, user_email, user_address)\n" +
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO users(user_login, user_password, user_email, user_address)\n" +
                     "    VALUES (?, ?, ?, ?);");
             stmt.setString(1, user.getLogin());
             stmt.setString(2, user.getPassword());
@@ -26,7 +26,7 @@ public class UserDao {
 
     public UserEntity getUser(int id) {
         try {
-            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM person WHERE user_id = ? LIMIT 1;");
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM users WHERE user_id = ? LIMIT 1;");
 
             stmt.setInt(1, id);
 
@@ -45,7 +45,7 @@ public class UserDao {
 
     public UserEntity getUserByLogin(String login) {
         try {
-            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM person WHERE user_login = ? LIMIT 1;");
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM users WHERE user_login = ? LIMIT 1;");
 
             stmt.setString(1, login);
 

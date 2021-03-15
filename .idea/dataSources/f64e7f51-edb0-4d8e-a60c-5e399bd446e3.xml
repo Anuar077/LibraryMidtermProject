@@ -801,10 +801,10 @@ false Zulu
     <database id="5" parent="1" name="java_ee_db">
       <ObjectId>16434</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>649</IntrospectionStateNumber>
+      <IntrospectionStateNumber>673</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|16537|16539|1
-sequence|table|16526|16528|1
+sequence|table|16556|16558|1
 </Relations>
     </database>
     <database id="6" parent="1" name="postgres">
@@ -884,7 +884,7 @@ UC/10
 </Acl>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>650</IntrospectionStateNumber>
+      <IntrospectionStateNumber>674</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="22" parent="5" name="plpgsql">
@@ -990,10 +990,10 @@ UC/10
       <StateNumber>637</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="35" parent="21" name="person_user_id_seq">
-      <ObjectId>16526</ObjectId>
+    <sequence id="35" parent="21" name="users_user_id_seq">
+      <ObjectId>16556</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <table id="36" parent="21" name="library">
@@ -1001,10 +1001,10 @@ UC/10
       <Owner>postgres</Owner>
       <StateNumber>637</StateNumber>
     </table>
-    <table id="37" parent="21" name="person">
-      <ObjectId>16528</ObjectId>
+    <table id="37" parent="21" name="users">
+      <ObjectId>16558</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
     </table>
     <column id="38" parent="36" name="book_id">
       <Position>1</Position>
@@ -1071,39 +1071,39 @@ UC/10
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>629</StateNumber>
-      <DefaultExpression>nextval(&apos;person_user_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>665</StateNumber>
+      <DefaultExpression>nextval(&apos;users_user_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
     <column id="47" parent="37" name="user_login">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="48" parent="37" name="user_password">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="49" parent="37" name="user_email">
       <Position>4</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="50" parent="37" name="user_address">
       <Position>5</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>629</StateNumber>
+      <StateNumber>665</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <index id="51" parent="37" name="person_pkey">
-      <ObjectId>16535</ObjectId>
-      <StateNumber>629</StateNumber>
+    <index id="51" parent="37" name="users_pkey">
+      <ObjectId>16565</ObjectId>
+      <StateNumber>665</StateNumber>
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1111,12 +1111,22 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="52" parent="37" name="person_pkey">
-      <ObjectId>16536</ObjectId>
-      <StateNumber>629</StateNumber>
+    <index id="52" parent="37" name="ii_user_login">
+      <ObjectId>16567</ObjectId>
+      <StateNumber>668</StateNumber>
+      <ColNames>user_login</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="53" parent="37" name="users_pkey">
+      <ObjectId>16566</ObjectId>
+      <StateNumber>665</StateNumber>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>person_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
