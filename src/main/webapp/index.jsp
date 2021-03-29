@@ -27,6 +27,10 @@
 <a href="login.jsp">Login</a>|
 <a href="filterlogout">LogoutFilter</a>|
 <a href="main">MainFilter</a>
+    <a href="scriplet.jsp">Scriplet</a>|
+    <a href="request.jsp">Request</a>|
+    <a href="application.jsp">Application </a>
+    <a href="response.html">Response</a>
 </header>
 <body>
 <h1><%= "Hello on the Web application!" %>

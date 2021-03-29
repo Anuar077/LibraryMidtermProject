@@ -38,7 +38,7 @@
     <form class="text-center" action="libraryservlet" method="post">
         <input type="text" name="title" placeholder="Title"/><br/>
         <input type="text" name="author" placeholder="Author"/><br/>
-        <input type="text" name="page" placeholder="Page"/><br/>
+        <input type="text" name="" placeholder="Page"/><br/>
         <input type="text" name="yaer" placeholder="Year"/><br/>
         <input type="submit" name="submit" value="Submit"/>
     </form>
