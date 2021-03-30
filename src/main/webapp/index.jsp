@@ -29,8 +29,14 @@
 <a href="main">MainFilter</a>
     <a href="scriplet.jsp">Scriplet</a>|
     <a href="request.jsp">Request</a>|
-    <a href="application.jsp">Application </a>
-    <a href="response.html">Response</a>
+    <a href="application.jsp">Application </a>|
+    <a href="response.html">Response</a>|
+    <a href="paged.jsp">Page Directives</a>|
+    <a href="included.jsp">Include Directives</a>|
+    <a href="taglibd.jsp">Taglib Directives</a>|
+    <a href="usebean.jsp">Usebean</a>|
+    <a href="includea.jsp">Icnlude</a>|
+    <a href="action.html">Action</a>|
 </header>
 <body>
 <h1><%= "Hello on the Web application!" %>
