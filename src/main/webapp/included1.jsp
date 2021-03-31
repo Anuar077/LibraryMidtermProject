@@ -11,8 +11,9 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Include Directives</h1>
 <p align="center">
-    This is my included1.jsp and I will include it in index.jsp using include directive
+    This is my included1.jsp and I will include it in included.jsp using include directive
 </p>
 </body>
 </html>

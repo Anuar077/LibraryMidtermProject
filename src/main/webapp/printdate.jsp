@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Include Action</h1>
 <% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>
 </body>
 </html>

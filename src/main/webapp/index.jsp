@@ -27,15 +27,15 @@
 <a href="login.jsp">Login</a>|
 <a href="filterlogout">LogoutFilter</a>|
 <a href="main">MainFilter</a>
-    <a href="scriplet.jsp">Scriplet</a>|
-    <a href="request.jsp">Request</a>|
-    <a href="application.jsp">Application </a>|
-    <a href="response.html">Response</a>|
+    <a href="scriplet.jsp">Scriplets</a>|
+    <a href="request.jsp">Request Implicit</a>|
+    <a href="application.jsp">Application Implicit </a>|
+    <a href="response.html">Response Implicit</a>|
     <a href="paged.jsp">Page Directives</a>|
     <a href="included.jsp">Include Directives</a>|
     <a href="taglibd.jsp">Taglib Directives</a>|
-    <a href="usebean.jsp">Usebean</a>|
-    <a href="includea.jsp">Icnlude</a>|
+    <a href="usebean.jsp">UseBean Action</a>|
+    <a href="includea.jsp">Include Action</a>|
     <a href="action.html">Action</a>|
 </header>
 <body>

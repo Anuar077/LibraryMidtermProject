@@ -11,7 +11,7 @@
     <title>Scriptlet</title>
 </head>
 <body>
-<h1>JSP Scriptlet Tags</h1>
+<h1>JSP Scriplets Tags</h1>
 <%-- Comment scriplet --%>
 <h1>Partial statement:</h1>
 <%

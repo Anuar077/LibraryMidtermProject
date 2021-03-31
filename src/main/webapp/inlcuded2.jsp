@@ -11,8 +11,9 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Include Directives</h1>
 <p align="center">
-    This is included2.jsp
+    This is include directives
 </p>
 </body>
 </html>

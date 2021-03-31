@@ -8,12 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Page Directives</title>
 </head>
 <body>
 <%-- JSP code to demonstrate how to use page
 directive to import a package --%>
-
+<h1>Page Directives</h1>
 <%@page import = "java.util.Date"%>
 <%Date d = new Date();%>
 <%=d%>

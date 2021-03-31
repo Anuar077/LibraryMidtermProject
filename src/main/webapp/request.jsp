@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Request</title>
+    <title>Request Implicit</title>
 </head>
 <body>
+<h1>Request Implicit</h1>
 <form action="userinfo.jsp">
     Enter User Name: <input type="text" name="uname" /> <br><br>
     Enter Password: <input type="text" name="pass" /> <br><br>

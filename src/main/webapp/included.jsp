@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Included Directives</h1>
 <%@ include file="included1.jsp" %>
 Main JSP Page: Content between two include directives.
 <%@ include file="inlcuded2.jsp" %>

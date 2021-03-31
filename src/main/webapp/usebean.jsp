@@ -8,14 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Action UseBean</title>
 </head>
 <body>
-<jsp:useBean id="obj" class="actions.Calculator"/>
-
+<jsp:useBean id="obj" class="actions.ActionCalculator"/>
+<h1>Action Tags UseBean</h1>
 <%
-    int m=obj.cube(5);
-    out.print("cube of 5 is "+m);
+    int m=obj.multiplication(5);
+    out.print("multiplication of 5 is "+m);
 %>
 </body>
 </html>

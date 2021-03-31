@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Response Implicit</title>
 </head>
 <body>
+<h1>Response Implicit</h1>
 <%
     String data2=(String)session.getAttribute("session-uid");
     out.println("Hi "+ data2+". Id/Password are wrong. Please try Again.");

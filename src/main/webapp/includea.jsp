@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<h2>this is index page</h2>
+<h2>Include Action</h2>
 
-<jsp:include page="printdate.jsp" />
+<jsp:include page="includedate.jsp" />
 
 <h2>end section of index page</h2>
 </body>

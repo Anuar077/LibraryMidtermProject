@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Application</title>
+    <title>Application Implicit</title>
 </head>
 <body>
+<h1>Application Implicit</h1>
 <%
 
     Integer counter= (Integer)application.getAttribute("numberOfVisits");

@@ -1,5 +1,5 @@
 package actions;
 
 public class Process {
-    private String name,password,email;
+    private String name;
 }
