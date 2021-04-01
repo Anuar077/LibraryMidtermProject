@@ -9,12 +9,45 @@
 <html>
 <head>
     <title>Title</title>
-</head>
-<body>
-<jsp:useBean id="u" class="actions.Process"></jsp:useBean>
-<jsp:setProperty property="*" name="u"/>
+    <style>
 
-Record:<br>
-<jsp:getProperty property="name" name="u"/><br>
+        body {
+            background-color: coral;
+            text-align: center;
+        }
+        header{
+            background-color: OldLace;
+            text-align: center;
+        }
+        div{
+            background-color:grey;
+            text-align: center;
+        }
+    </style>
+</head>
+<header>
+    <a href="library.jsp">Library</a>|
+    <a href="register.jsp">Register</a>|
+    <a href="bookservlet">BookList</a>|
+    <a href="loginfilter.jsp">LoginFilter</a>|
+    <a href="login.jsp">Login</a>|
+    <a href="filterlogout">LogoutFilter</a>|
+    <a href="main">MainFilter</a>
+    <a href="scriplet.jsp">Scriplets</a>|
+    <a href="request.jsp">Request Implicit</a>|
+    <a href="application.jsp">Application Implicit </a>|
+    <a href="response.html">Response Implicit</a>|
+    <a href="paged.jsp">Page Directives</a>|
+    <a href="included.jsp">Include Directives</a>|
+    <a href="taglibd.jsp">Taglib Directives</a>|
+    <a href="usebean.jsp">UseBean Action</a>|
+    <a href="includea.jsp">Include Action</a>|
+    <a href="action.html">Action</a>|
+</header>
+<body>
+<jsp:useBean id="obj" class="actions.Process" />
+<jsp:setProperty name="obj" property="*" />
+
+Welcome, <jsp:getProperty name="obj" property="name" />
 </body>
 </html>

@@ -9,9 +9,23 @@
 <html>
 <head>
     <title>Include Action</title>
+    <style>
+
+        body {
+            background-color: coral;
+            text-align: center;
+        }
+        header{
+            background-color: OldLace;
+            text-align: center;
+        }
+        div{
+            background-color:grey;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h1>Include Action</h1>
 <% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>
 
 </body>
