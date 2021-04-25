@@ -1,16 +1,14 @@
-CREATE TABLE library
+CREATE TABLE posts
 (
-    book_id      int AUTO_INCREMENT PRIMARY KEY,
-    book_title   text,
-    book_author  text,
-    book_page    text,
-    book_year     text
+    pId serial PRIMARY KEY,
+    title   text,
+    pContent text,
+    username    text
 );
-CREATE TABLE users
+CREATE TABLE comments
 (
-    user_id      int AUTO_INCREMENT PRIMARY KEY,
-    user_login   text,
-    user_password text,
-    user_email    text,
-    user_address  text
+   cId serial PRIMARY KEY,
+    content  text,
+    pId text,
+    username    text
 );
