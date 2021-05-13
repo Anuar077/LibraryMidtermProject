@@ -7,7 +7,7 @@ public class UserEntity {
     String email;
     String address;
 
-    public UserEntity(String login, String password) {
+    public UserEntity() {
         this.login = login;
         this.password = password;
         this.email = "";

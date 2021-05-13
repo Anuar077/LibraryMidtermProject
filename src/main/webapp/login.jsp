@@ -2,27 +2,8 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
-    <style>
-
-        body {
-            background-color: coral;
-            text-align: center;
-        }
-        header{
-            background-color: OldLace;
-            text-align: center;
-        }
-    </style>
 </head>
-<header>
-    <a href="library.jsp">Library</a>|
-    <a href="register.jsp">Register</a>|
-    <a href="bookservlet">BookList</a>|
-    <a href="loginfilter.jsp">LoginFilter</a>|
-    <a href="login.jsp">Login</a>|
-    <a href="filterlogout">LogoutFilter</a>|
-    <a href="main">MainFilter</a>
-</header>
+
 <body>
 <div class="lib">
     <h1 class="text-center">Login</h1>
